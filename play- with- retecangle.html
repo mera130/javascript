@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changing css property</title>
+    <style>
+
+        h2{
+            text-align: center; 
+        }
+
+        .rectangle{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .button{
+            padding: 20px;
+            width: 200px;
+
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h2>
+        make changes of the rectangle.
+    </h2>
+    <div class="rectangle"></div>
+    <div class="button">
+
+        <button onclick="makecircle()">circle</button>
+        <button onclick="hide()">hide</button>
+        <button onclick="show()">show</button>
+
+
+    </div>
+    <script>
+        let div = document.querySelector(".rectangle")
+        function makecircle(){
+            div.style.borderRadius ="50%";
+        }
+        function hide(){
+            div.style.display= "none";
+        }
+        function show(){
+            div.style.display = "block";
+        }
+        div.onMouseenter = function(){
+            div.style.background= "red";
+
+        }
+        div.onmouseout = function(){
+            div.style.background = "none";
+        }
+    </script>
+</body>
+</html>
