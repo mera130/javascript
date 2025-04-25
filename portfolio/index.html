@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        nav{
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            margin: 10px;
+        }
+        li a:hover{
+background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <ul>
+        
+<li> <a href="">home</a></li>
+<li> <a href="">contact</a></li>
+<li> <a href="">about</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- content for tiger -->
+     <strong><h2>fun fact</h2></strong>
+     <img src="./tiger.jpg" alt="">
+     <br>
+     <button onclick="tiger()">read more!...</button>
+<p id="tiger-info"></p>
+
+
+<!-- lion content -->
+ <img src="./lion.jpg" alt="">
+<br>
+<button onclick="lion()">read more!...</button>
+<p id="lion-info"></p>
+
+<script>
+    function tiger(){
+        document.getElementById("tiger-info").innerHTML= "Tigers are the largest members of the cat family and are known for their powerful build, sharp senses, and striking orange coat with black stripes. Each tiger's stripe pattern is unique, kind of like a fingerprint. Scientifically called Panthera tigris, they’re native to various parts of Asia—from the icy forests of Siberia to the tropical jungles of India and Southeast Asia. Tigers are solitary animals. They prefer to live and hunt alone, marking large territories to avoid conflicts with other tigers."
+    }
+    function lion() {
+            document.getElementById("lion-info").innerHTML = "Lions, known scientifically as Panthera leo, are one of the most iconic and majestic animals in the world. They're large, muscular cats with short, tawny coats and a distinctive mane in males, which sets them apart from other big cats. Native primarily to the grasslands and savannas of Sub-Saharan Africa, a small population also survives in the Gir Forest of India. Lions are unique among big cats because they are highly social, living in groups called prides. These prides are typically made up of related females, their cubs, and a few dominant males."
+        }
+</script>
+
+
+</body>
+</html>
